@@ -65,9 +65,23 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px 0;
+}
+
+.nav__link--primary {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 16px;
 }
 
 .logo {
     margin-right: 0.75rem;
     width: 2.5rem;
 }
+
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 60px;
+    color: #242424;
+}    
