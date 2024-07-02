@@ -242,6 +242,11 @@ FEATURES
     border-radius: 9999px;
 }
 
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .service {
     display: flex;
     flex-wrap: wrap;
