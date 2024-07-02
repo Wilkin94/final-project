@@ -87,27 +87,12 @@ NAVIGATION
     font-size: 24px;
 }    
 
-.nav__links {
-    position: absolute;
-    background-color: azure;
-    text-decoration: none;
-    z-index: 10;
-    width: 100%;
-    padding: 16px;
-    border: black solid 1px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.menu__link {
+.nav__link {
     margin: 0 16px;
-
 }
 
-.menu__links,
-.menu__links--primary {
+.nav__links,
+.nav__links--primary {
     display: inline-block;
     margin: 0 16px;
     font-size: 13px;
@@ -117,7 +102,7 @@ NAVIGATION
     letter-spacing: 0.025rem;
 }
 
-.menu__links--primary {
+.nav__links--primary {
     border-bottom-width: 0px;
     background-color: rgba(100, 21, 255, 1);
     padding: 6px 32px;
