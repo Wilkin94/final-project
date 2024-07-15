@@ -486,6 +486,12 @@ PRICING
 }
 
 .plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.plan__green {
     width: calc( 100% / 3 - 32px );
     display: flex;
     flex-direction: column;
