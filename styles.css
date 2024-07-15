@@ -561,18 +561,18 @@ PRICING
 }
 
 .btn__green {
-    background: linear-gradient(115deg),
+    background: linear-gradient(115deg,
     rgb(56, 178, 172) 0%,
-    rgb(129, 230, 217) 100%;
+    rgb(129, 230, 217) 100%);
     color: #f7fafc;
 }
 
 .glow__green {
     height: 0.5 rem;
     width: 101%;
-    background: linear-gradient(115deg)
+    background: linear-gradient(115deg,
     rgb(56, 178, 172) 0%,
-    rgb(129, 230, 217) 100%;
+    rgb(129, 230, 217) 100%);
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
