@@ -36,7 +36,11 @@ p {
 }
 
 .purple {
-    color: rgba(100, 21, 255, 1);;
+    color: #349905;
+}
+
+.title__purple {
+    color: #349905;
 }
 
 body {
@@ -112,9 +116,9 @@ NAVIGATION
 
 .nav__links--primary {
     border-bottom-width: 0px;
-    background-color: rgba(100, 21, 255, 1);
+    background-color: #349905;
     padding: 6px 32px;
-    border: 4px solid  rgba(100, 21, 255, 1);
+    border: 4px solid  #349905;
     border-radius: 20px;
     color: white;
 }
@@ -184,7 +188,7 @@ LANDING
 }
 
 .landing__btn {
-    background-color: #6415ff;
+    background-color: #349905;
     color: white;
     border: 0px;
     padding: 12px 32px;
@@ -322,7 +326,7 @@ ABOUT
 }
 
 .about__btn {
-    background-color: #6415ff;
+    background-color: #349905;
     color: white;
     border: 0px transparent;
     padding: 12px 32px;
@@ -638,4 +642,98 @@ PRICING
     rgb(245, 101, 101) 0%,
     rgb(254, 178, 178) 100%);
     color: #f7fafc;
+}
+
+/*
+
+TESTIMONIALS
+
+*/
+
+.row__testimonials {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 0;
+}
+
+.row__testimonials--left {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.row__testimonials--right {
+    width: 45%;
+}
+
+.testimonials__img {
+    width: 100%;
+}
+
+.testimonials__title {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.testimonials__para {
+    margin-top: 24px;
+}
+
+.stars__img {
+    width: 30%;
+}
+
+.testimonials__about {
+    margin-top: 16px;
+}
+
+.testimonials__about--title {
+    font-size: 20px;
+}
+
+.testimonials__about--para {
+    color: #7c8ba1;
+    margin: 16px 0 40px;
+}
+
+.testimonials__id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.photo__wrapper {
+    max-width: 96px;
+}
+
+.photo {
+    border: transparent;
+    border-radius: 9999px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.name__position--wrapper {
+    margin-left: 24px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.position {
+    font-weight: 400;
+    color: #7c8ba1;
+}
+
+.testimonials__btn {
+    border: transparent;
+    border: 9999px;
+    padding: 12px 16px;
+    margin-right: 12px;
 }
