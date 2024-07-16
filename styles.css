@@ -47,15 +47,18 @@ p {
     margin-bottom: 20px;
 }
 
-.main {
+.root {
     padding: 32px;
-    position: relative;
 }
 
 .row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.grey {
+    color: #a0aec0;
 }
 
 /*
@@ -153,34 +156,10 @@ LANDING
     padding: 96px 0;
 }
 
-.input__box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-
-.landing__row--left {
+.row__landing--left {
     display: flex;
     flex-direction: column;
     width: 40%;
-}
-
-.landing__row--right {
-    width: 50%;
-}
-
-.landing__para {
-    margin: 32px 0;
-    color: #243e63;
-}
-
-.img {
-    width: 100%;
-}
-
-.landing__img {
-    width: 100%;   
 }
 
 .landing__title {
@@ -189,14 +168,25 @@ LANDING
     color: black;
 }
 
-.landing__input {
+.landing__para {
+    margin: 32px 0;
+    color: #243e63;
+}
+
+.input__box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing__inp {
     border: 2px solid rgb(226, 232, 240);
     border-radius: 9999px;
     padding: 20px 32px;
     width: 100%;
     color: rgb(226, 232, 240);
     font-size: 16px;
-    position: relative;
 }
 
 .landing__btn {
@@ -212,26 +202,35 @@ LANDING
     right: 0;
     display: flex;
     align-items: center;
-    font-size: 16px;
     font-weight: 600;
-    
-}
-
-.landing__logo--para {
-    font-weight: bold;
-    font-size: 12px;
-    color: #a0aec0;
-    margin-bottom: 12px;
-    filter: opacity(60%);
+    font-size: 16px;
 }
 
 .landing__logo {
     margin-top: 80px;
 }
 
+.landing__para--logo {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.landing__img {
+    width: 100%;
+}
+
+.logo__wrapper {
+    max-width: 320px;
+}
+
 .logo {
-    width: 70%;
     filter: opacity(50%);
+    width: 99%;
+}
+
+.row__landing--right {
+    width: 60%;
 }
 
 /*
@@ -486,6 +485,25 @@ VLAUES
 
 .values__about--para {
     font-weight: 400;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+}
+
+.fa-dollar-sign {
+    padding: 8px 12px;
+    background-color: rgb(154, 230, 180);
+    border: transparent;
+    border-radius: 9999px;
+}
+
+.fa-suitcase {
+    padding: 8px;
+    background-color: #feb2b2;
+    border: transparent;
+    border-radius: 9999px;
+
 }
 
 /*
