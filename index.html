@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treact Final</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/da5b50192e.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <main class="main">
     <div class="row">
       <nav class="navigation">
         <a href="/" class="nav__left">
@@ -41,12 +43,11 @@
               Our templates are easy to setup, understand and customize. Fully
               modular components with a variety of pages and components.
             </p>
-            <div class="landing__box">
+            <div class="input__box">
               <input
                 class="landing__input"
                 type="email"
-                placeholder="Your E-mail Address"
-              />
+                placeholder="Your E-mail Address">
               <button class="landing__btn">Get Started</button>
               <div class="landing__logo">
                 <p class="landing__logo--para">OUR TRUSTED CUSTOMERS</p>
@@ -407,7 +408,7 @@
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
               <button class="testimonials__btn">
-                <i class="fa-solid fa-srrow-right"></i>
+                <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
           </div>
@@ -415,5 +416,115 @@
       </div>
       </div>
     </section>
+
+    <section id="faq">
+      <div class="row__faq">
+        <div class="faq__header">
+          <h5 class="title__purple">FAQS</h5>
+          <h2 class="faq__title">You Have <span class="purple">Questions?</span></h2>
+          <p class="faq__para">
+            And we have got answers to all of them. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+        <div class="questions">
+          <ul class="questions__list">
+            <li class="questions__list--item">
+              <div class="question">Do you really support Internet Explorer 11 ?</div>
+            </li>
+            <li class="questions__list--item">
+              <div class="question">Are the templates compatiable with React ?</div>
+            </li>
+            <li class="questions__list--item">
+              <div class="question">Is there a subscription service to get the lastest templates ?</div>
+            </li>
+            <li class="questions__list--item">
+              <div class="question">What kind of payment methods do you accept ?</div>
+            </li>
+            <li class="questions__list--item">
+              <div class="question">How long do you usually support a standalone template for ?</div>
+            </li>
+            <li class="questions__list--item">
+              <div class="question">Are the templates easily customizable ?</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="action"> 
+      <div class="row__action">
+        <h2 class="action__title">
+          Developers all over the world are happily using Treact.</h2>
+          <div class="action__btn--wrapper">
+            <button class="action__btn--bottom action__btn--red">Get Started</button>
+            <button class="action__btn--bottom action__btn--purple">Contact Us</button>
+          </div>
+      </div>
+    </section>
+    </main>
+
+    <div class="footer__wrapper">
+      <div class="row__footer">
+        <div class="links">
+          <div class="link">
+            <h4 class="blue-white footer__link--header">MAIN</h4>
+            <a class="blue-white footer__link--anchor" href="">Blog</a>
+            <a class="blue-white footer__link--anchor" href="">FAQs</a>
+            <a class="blue-white footer__link--anchor" href="">Support</a>
+            <a class="blue-white footer__link--anchor" href="">About Us</a>
+          </div>
+          <div class="link">
+            <h4 class="blue-white footer__link--header">PRODUCT</h4>
+            <a class="blue-white footer__link--anchor" href="">Log In</a>
+            <a class="blue-white footer__link--anchor" href="">Personal</a>
+            <a class="blue-white footer__link--anchor" href="">Business</a>
+            <a class="blue-white footer__link--anchor" href="">Team</a>
+          </div>
+          <div class="link">
+            <h4 class="blue-white footer__link--header">PRESS</h4>
+            <a class="blue-white footer__link--anchor" href="">Logos</a>
+            <a class="blue-white footer__link--anchor" href="">Events</a>
+            <a class="blue-white footer__link--anchor" href="">Stories</a>
+            <a class="blue-white footer__link--anchor" href="">Office</a>
+          </div>
+          <div class="link">
+            <h4 class="blue-white footer__link--header">TEAM</h4>
+            <a class="blue-white footer__link--anchor" href="">Career</a>
+            <a class="blue-white footer__link--anchor" href="">Founders</a>
+            <a class="blue-white footer__link--anchor" href="">Culture</a>
+            <a class="blue-white footer__link--anchor" href="">Onboarding</a>
+          </div>
+          <div class="link">
+            <h4 class="blue-white footer__link--header">LEGAL</h4>
+            <a class="blue-white footer__link--anchor" href="">GDPR</a>
+            <a class="blue-white footer__link--anchor" href="">Privacy Policy</a>
+            <a class="blue-white footer__link--anchor" href="">Terms of Service</a>
+            <a class="blue-white footer__link--anchor" href="">Disclaimer</a>
+          </div>
+        </div>
+        <div class="footer__divider">
+          <div class="footer__info">
+            <div class="footer__info--left">
+              <figure class="footer__logo--wrapper">
+                <img class="footer__logo" src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="">
+              </figure>
+              <h5 class="footer__info--header">Treact inc.</h5>
+            </div>
+            <p class="grey__cr">
+              <a class="grey__cr" href="#"> 
+                &copy; 2024 Treact Inc. All Rights Reserved.
+              </a>
+            </p>
+            <div class="footer__links">
+              <i class="fa-brands icon fa-facebook" style="color: #f7fafc;"></i>
+              <i class="fa-brands icon fa-twitter" style="color: #f7fafc;"></i>
+              <i class="fa-brands icon fa-youtube" style="color: #f7fafc;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
   </body>
 </html>
