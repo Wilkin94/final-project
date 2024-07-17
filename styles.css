@@ -8,9 +8,20 @@
     line-height: 1.25;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #349905;
+    transition: all 300ms ease;
+    font-weight: bold;
 }
 
 h1 {
@@ -142,6 +153,62 @@ NAVIGATION
 
 .nav__header {
     font-size: 24px;
+}
+
+.btn__menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: #349905;
+    display: none;
+}
+
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    max-height: 100vh;
+}
+.menu__backdrop {
+    position: absolute;
+    background-color: #242424;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list {
+    padding: 32px 0;
+}
+
+.menu__link {
+    font-size: 40px;
+    color: #349905;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: #349905;
 }
 
 /*
@@ -487,6 +554,16 @@ VLAUES
     font-weight: 400;
 }
 
+.values__btn {
+    background-color: #349905;
+    color: white;
+    border: 0px transparent;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
 .fa-solid, .fas {
     font-weight: 900;
 }
@@ -716,8 +793,12 @@ TESTIMONIALS
     margin-top: 24px;
 }
 
-.stars__img {
+.stars__wrapper {
     width: 30%;
+}
+
+.stars__img {
+    width: 100%;
 }
 
 .testimonials__about {
@@ -948,4 +1029,341 @@ FOOTER
 
 .fa__brands {
     font-weight: 400;
+}
+
+/* DESKTOP */
+
+@media (max-width: 992px) {
+
+    .btn__menu {
+        display: block;
+    }
+
+    .nav__links,
+    .nav__links--grouped-anchor,
+    .nav__links--primary-anchor,
+    .nav__links--primary {
+        display: none;
+    }
+
+    .landing__title {
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing__para {
+        font-size: 16px;
+        margin: 20px 0;
+        font-weight: 400;
+    }
+
+    .row__landing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 48px;
+    }
+
+    .row__landing--right {
+        margin-top: 48px;
+    }
+
+    /* FEATURES */
+
+    .row__features {
+        padding: 0 12px;
+    }
+
+    .feature__para {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    /* VALUES */
+
+    .values__about--wrapper {
+        flex-direction: column;
+    }
+
+    /* PRICING */
+
+    .plans {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials__title {
+        font-size: 36px;
+    }
+
+    .photo__wrapper {
+        max-width: 80px;
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    /* ACTION */
+
+    .row__action {
+        flex-direction: column;
+    }
+
+    .action__title {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+}
+
+/* TABLETS */
+
+@media (max-width: 768px) {
+    .row__landing--left {
+        width: 90%;
+    }
+
+    .row__landing--right {
+        width: 80%;
+    }
+
+    /* ABOUT */
+
+    .row__about {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .row__about--left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .about__para {
+        font-size: 16px;
+    }
+
+    .row__about--right {
+        width: 80%;
+        margin-bottom: 64px;
+    }
+
+    /* SETUP */
+
+    .row__steps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row__steps--left {
+        margin-bottom: 48px;
+    }
+
+    .row__steps--right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .steps__list {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .list__seperator {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step__number {
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    .step {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step__title {
+        font-size: 20px;
+    }
+
+    .step__description {
+        font-size: 14px;
+        width: 50%;
+    }
+
+    /* VALUES */
+
+    .row__values {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row__values--left {
+        width: 75%;
+    }
+
+    .values__left--wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 98px;
+    }
+
+    .values__title {
+        text-align: center;
+    }
+
+    .values__para {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 14px;
+        width: 75%;
+    }
+
+    .values__about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .values__about--header {
+        margin-top: 24px;
+    }
+
+    .values__about--para {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .row__values--right {
+        width: 80%;
+    } 
+
+    /* PRICING */
+
+    .plan {
+        margin-right: 0;
+    }
+
+    /* TESTIMONIALS */
+
+    .row__testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row__testimonials--left {
+        width: 80%;
+        margin-bottom: 64px;
+    }
+
+    .row__testimonials--right {
+        text-align: center;
+        width: 80%;
+    }
+
+    .testimonials__about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .stars__wrapper {
+        width: 30%;
+        margin-bottom: 12px;
+    }
+
+    .testimonials__about--para {
+        margin-top: 24px;
+    }
+
+    .testimonials__about--example-wrapper {
+        width: 100%;
+    }
+
+    /* ACTION */
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 640px) {
+    
+    .landing__inp {
+        text-align: center;
+    }
+    .landing__btn {
+        position: relative;
+        width: 100%;
+        padding: 20px 32px;
+        text-align: center;
+        display: block;
+    }
+
+    /* FEATURES */
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .service__description {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    /* ABOUT */
+
+    .about__title {
+        font-size: 30px;
+    }
+
+    /* SETUP */
+
+    .setup__title {
+        font-size: 30px;
+    }
+
+    /* PRICING */
+
+    .plans {
+        justify-content: center;
+    }
+
+    .plan {
+        width: 80%;
+    }
+
+    /* ACTION */
 }

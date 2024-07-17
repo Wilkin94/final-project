@@ -6,8 +6,9 @@
     <title>Treact Final</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://kit.fontawesome.com/da5b50192e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
-  <body>
+  <body class="menu--open">
   
   <main class="root">
     <section id="Landing">
@@ -20,8 +21,8 @@
           Treact
         </a>
         <ul class="nav__link">
-          <li class="nav__links"><a href="#">Home</a></li>
-          <li class="nav__links"><a href="#">Blog</a></li>
+          <li class="nav__links"><a href="#">About</a></li>
+          <li class="nav__links"><a href="#">Services</a></li>
           <li class="nav__links"><a href="#">Pricing</a></li>
           <li class="nav__links"><a href="#">Contact Us</a></li>
           <li class="nav__links--grouped">
@@ -31,6 +32,37 @@
             <a class="nav__links--primary-anchor" href="#">Sign Up</a>
           </li>
         </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fa-solid fa-x"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+            </li>
+            <li class="menu__list">
+              <a href="#services" class="menu__link" onclick="closeMenu()">Services</a>
+            </li>
+            <li class="menu__list">
+              <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+            </li>
+            <li class="menu__list">
+              <a href="#steps" class="menu__link" onclick="closeMenu()">Setup</a>
+            </li>
+            <li class="menu__list">
+              <a href="#values" class="menu__link" onclick="closeMenu()">Values</a>
+            </li>
+            <li class="menu__list">
+              <a href="#testimonials" class="menu__link" onclick="closeMenu()">Testimonials</a>
+            </li>
+            <li class="menu__list">
+              <a href="#faq" class="menu__link" onclick="closeMenu()">FAQs</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
     <div class="row__landing">
@@ -269,7 +301,7 @@
                   <i class="fa-solid fa-dollar-sign"></i>
                   <h4 class="values__about--title">Affordable</h4>
                 </div>
-                <p>
+                <p class="values__about--para">
                   We promise to offer you the best rate we can - at par with the
                   industry standard
                 </p>
@@ -279,14 +311,14 @@
                   <i class="fa-solid fa-suitcase"></i>
                   <h4 class="values__about--title">Professionalism</h4>
                 </div>
-                <p>
+                <p class="values__about--para">
                   We assure you the our templates are designed and created by
                   professional designers.
                 </p>
               </div>
             </div>
           </div>
-          <button class="about__btn">Learn More</button>
+          <button class="values__btn">Learn More</button>
         </div>
         <div class="row__values--right">
           <figure class="values__img--wrapper">
@@ -312,14 +344,14 @@
           </p>
         </div>
         <div class="plans">
-          <div class="plan__green">
+          <div class="plan plan__green">
             <div class="glow__green"></div>
               <div class="plan__header">
                 <h4 class="type">PERSONAL</h4>
                 <h3 class="price">$17.99</h3>
                 <h class="duration">MONTHLY</h>
               </div>
-              <div class="plan__feature">
+              <div class="plan plan__feature">
                 <h4 class="plan__para--title">For Individuals</h4>
                 <p class="feature__para">30 Templates</p>
                 <p class="feature__para">7 Landing Pages</p>
@@ -330,7 +362,7 @@
                 <button class="action__btn btn__green">BUY NOW</button>
               </div>
             </div>
-            <div class="plan__blue">
+            <div class="plan plan__blue">
                 <div class="plan__header">
                   <h4 class="blue-white type">BUSINESS</h4>
                   <h3 class="blue-white price">$37.99</h3>
@@ -347,7 +379,7 @@
                   <button class="action__btn btn__blue">BUY NOW</button>
                 </div>
               </div>
-              <div class="plan__red">
+              <div class="plan plan__red">
                 <div class="glow__red"></div>
                   <div class="plan__header">
                     <h4 class="type">ENTERPRISE</h4>
